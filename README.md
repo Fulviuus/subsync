@@ -18,7 +18,7 @@ On macOS:
 
 ```sh
 brew install ffmpeg
-git clone git@github.com:Fulviuus/subsync.git
+git clone https://github.com/Fulviuus/subsync.git
 cd subsync
 cargo install --path . --locked
 ```
@@ -26,8 +26,10 @@ cargo install --path . --locked
 Alternatively, install directly from GitHub with an account that has repository access:
 
 ```sh
-CARGO_NET_GIT_FETCH_WITH_CLI=true cargo install --git ssh://git@github.com/Fulviuus/subsync.git --locked
+CARGO_NET_GIT_FETCH_WITH_CLI=true cargo install --git https://github.com/Fulviuus/subsync.git --locked
 ```
+
+For a private repository, authenticate Git first (for example, with `gh auth login` and `gh auth setup-git`).
 
 The executable is installed into `~/.cargo/bin`; ensure that directory is on PATH. On Debian/Ubuntu, install `ffmpeg` and `build-essential`, then use the same Cargo command with a recent Rust toolchain.
 
