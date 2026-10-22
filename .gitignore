@@ -1,5 +1,11 @@
+/target/
+*.bak
+*.bak.*
 
-# Beads / Dolt files (added by bd init)
+# Local credentials, editor and database state
+.env
+.env.*
+.DS_Store
 .dolt/
 *.db
 .beads-credential-key

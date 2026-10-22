@@ -1,0 +1,19 @@
+[package]
+name = "subsync"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "GPL-3.0-only"
+description = "Align external subtitles to a video's speech, with safe backups"
+
+[dependencies]
+alass-core = "2.0.0"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+regex = "1"
+tempfile = "3"
+webrtc-vad = "0.4"
+
+[profile.release]
+lto = "thin"
+strip = true
