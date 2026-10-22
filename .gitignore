@@ -2,6 +2,9 @@
 *.bak
 *.bak.*
 
+# Hidden directories are local-only, at any depth (including agent settings).
+.*/
+
 # Local credentials, editor and database state
 .env
 .env.*
